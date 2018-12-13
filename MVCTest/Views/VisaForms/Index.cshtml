@@ -1,0 +1,185 @@
+﻿@model IEnumerable<MVCTest.Models.VisaForm>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.app_type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.centre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.phone_code)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.member)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.save)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.app_date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.app_date_hidden)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.app_time)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.captcha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.countryID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dateOfBirth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.first_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.last_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.loc_final)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.loc_selected)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.mission_selected)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.missionId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nationalityId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.passport_no)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.passportType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pptExpiryDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pptIssueDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pptIssuePalace)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.app_type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.centre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.phone_code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.member)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.save)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.app_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.app_date_hidden)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.app_time)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.captcha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.countryID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dateOfBirth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.first_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.last_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.loc_final)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.loc_selected)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.mission_selected)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.missionId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nationalityId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.passport_no)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.passportType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pptExpiryDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pptIssueDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pptIssuePalace)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

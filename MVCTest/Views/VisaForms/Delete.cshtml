@@ -1,0 +1,177 @@
+﻿@model MVCTest.Models.VisaForm
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>VisaForm</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.app_type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.app_type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.centre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.centre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.category)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.category)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.phone_code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.phone_code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.member)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.member)
+        </dd>
+        @*<dt>
+            @Html.DisplayNameFor(model => model.save)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.save)
+        </dd>*@
+        <dt>
+            @Html.DisplayNameFor(model => model.app_date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.app_date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.app_date_hidden)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.app_date_hidden)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.app_time)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.app_time)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.captcha)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.captcha)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.countryID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.countryID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.dateOfBirth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.dateOfBirth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.first_name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.first_name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.last_name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.last_name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.loc_final)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.loc_final)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.loc_selected)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.loc_selected)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.mission_selected)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.mission_selected)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.missionId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.missionId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nationalityId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nationalityId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.passport_no)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.passport_no)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.passportType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.passportType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.pptExpiryDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.pptExpiryDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.pptIssueDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.pptIssueDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.pptIssuePalace)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.pptIssuePalace)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
