@@ -12,7 +12,7 @@ using MVCTest.Models;
 
 namespace MVCTest.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class VisaFormsController : Controller
     {
         private readonly DataContext _context;
