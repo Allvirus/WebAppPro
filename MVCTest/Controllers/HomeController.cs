@@ -14,7 +14,7 @@ using Microsoft.IdentityModel.Tokens;
 using MVCTest.Data;
 using MVCTest.Models;
 
-namespace MVCTest.Controllers
+namespace MVCTest.Models
 {
     public class HomeController : Controller
     {

@@ -13,5 +13,6 @@ namespace MVCTest.Models
         public string UserName { get; set; }
         [Display(Name = "密码")]
         public string UserPwd { get; set; }
+        public string dd { get; set; }
     }
 }

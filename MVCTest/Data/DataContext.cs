@@ -12,6 +12,7 @@ namespace MVCTest.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         public DbSet<VisaForm> VisaForm { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Test> Tests { get; set; }
 
 
     }

@@ -10,7 +10,7 @@ using MVCTest.Data;
 using MVCTest.Data.Http;
 using MVCTest.Models;
 
-namespace MVCTest.Controllers
+namespace MVCTest.Models
 {
     [Authorize]
     public class VisaFormsController : Controller
@@ -59,7 +59,7 @@ namespace MVCTest.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,app_type,centre,category,phone_code,phone,email,member,save,app_date,app_date_hidden,app_time,captcha,countryID,dateOfBirth,first_name,last_name,loc_final,loc_selected,mission_selected,missionId,nationalityId,passport_no,passportType,pptExpiryDate,pptIssueDate,pptIssuePalace")] VisaForm visaForm)
+        public async Task<IActionResult> Create([Bind] VisaForm visaForm)
         {
             if (ModelState.IsValid)
             {

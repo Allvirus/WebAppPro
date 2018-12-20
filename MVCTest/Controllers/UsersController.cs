@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MVCTest.Controllers
+namespace MVCTest.Models
 {
     public class UsersController : Controller
     {
